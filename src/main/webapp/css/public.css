@@ -1,0 +1,95 @@
+/*-----样式重置start-----*/
+*{margin: 0;padding: 0;}
+em{font-style: normal;}/*em斜体变正*/
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none;vertical-align: top;}/*vertical-align 属性设置元素的垂直对齐方式*/
+table{border-collapse: collapse;}/*为表格设置合并边框模型*/
+input,textarea{outline:none;}
+textarea{resize: none;overflow: auto;}
+body{font-size: 12px;font-family: "微软雅黑";background: url(../img/body_bg.jpg);}
+
+/*-----样式重置 end-----*/
+
+/*-----public style-----*/
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+.text{
+	height: 30px;
+	padding-left: 5px;
+	border-radius: 15px;
+}
+.btn{
+	height: 30px;
+	width: 70px;
+	font-size: 14px;
+	/*background: #3ba354;*/
+	background: url(../img/btn_bg.png);
+	color: white;
+	border: 0;
+}
+.btn:hover{
+	cursor: pointer;
+	background: url(../img/btn_bg_h.png);
+}
+/*-----public style-----*/
+/*-----header start-----*/
+header{
+	width: 980px;
+	height: 60px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 5px;
+}
+.head_p{
+	height: 30px;
+	font-size: 14px;
+	font-weight: bold;
+	color:orangered;
+	padding: 10px 0 0 20px;
+}
+/*-----header end-----*/
+/*-----nav start-----*/
+nav{
+	display: block;
+	width: 980px;
+	height: 65px;
+	background: url(../img/nav_bg.png) no-repeat 50%;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 50px;
+	font-size: 18px;
+}
+nav a{
+	margin:0 35px;
+	color: white;
+	text-shadow: 1px 1px 1px #ccc;
+}
+nav a:hover{
+	color: #40ABDB;
+}
+/*-----nav end-----*/
+/*-----footer start-----*/
+footer .contact{
+	width: 80%;
+	height: 80px;
+	margin: 0 auto;
+	/*background:#829a69;*/	
+	text-align: center;
+	line-height: 30px;
+	font-size:16px;
+}
+footer .contact a{
+	margin: 10px 10px 0 10px;
+	color: #000;
+}
+footer .contact a:hover{
+	color: coral;
+}
+/*-----footer end-----*/
+

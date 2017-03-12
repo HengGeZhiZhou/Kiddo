@@ -1,0 +1,131 @@
+.main{
+	width: 980px;
+	height: 900px;
+	margin: 10px auto;
+	background: white;
+}
+.navbar{
+	width: 980px;
+	height: 200px;
+	border: 2px solid #E5E5E5;
+}
+.navbar ul li a{
+	color: #565656;
+}
+/*a是标签优先级为10，要想改变颜色，在前面加一个类或者其他父级*/
+.navbar .active{	
+	color:#fff;
+	width: 38px;
+	height: 30px;
+	padding: 2px 5px;
+	text-align: center;
+	background: #ff7171;
+}
+.area_frame,.tese_frame,.age_frame{
+	width: 980px;
+	height: 30px;
+	margin:10px 0 40px 30px;
+	font-size: 14px;
+	line-height: 30px;
+}
+.area_til,.tese_til,.age_til{
+	font-weight: bold;
+	margin-right:40px ;
+}
+.area_frame ul li,.tese_frame ul li,.age_frame ul li{
+	float: left;
+	margin-right: 30px;
+}
+.org{
+	width: 980px;
+	margin: 0 auto;
+}
+.org_list>li{
+	width: 978px;
+	height: 300px;
+	margin-top: 5px;
+	border: 1px solid #E5E5E5;
+}
+.org_l{
+	width: 778px;
+	float: right;
+}
+.org_l>li{
+	width: 778px;
+	height: 44px;
+}
+.org_detial .org_img{
+	padding: 10px;
+	float: left;
+}
+.org_list .org_name{
+	padding: 10px;
+	width: 180px;
+	float: left;
+}
+.ico{
+	display: block;
+	width: 17px;
+	height: 21px;
+	float: left;
+	background-position: 0 0;
+	margin-top: 13px;
+	background: url(../img/org/icon_sprite.png);
+}
+.defen{
+	width: 200px;
+	height: 25px;
+	float: left;
+}
+.defen .star{
+	width: 114px;
+	height: 25px;
+	margin-left:10px ;
+	background: url(../img/org/ico2.gif) 115px 0;
+}
+.defen .fen_s{
+	font-size: 14px;
+	float: left;
+	color: #fa991c;
+	margin:8px 0 0 10px;
+}
+.eval{
+	display: block;
+	width: 100px;
+	float: left;
+	color: #3e3e3e;
+	font-size: 14px;
+	margin-top: 8px;
+}
+.eval:hover{
+	color: #FA991C;
+}
+.org_address{
+	margin-left: 10px;
+	font-size: 14px;
+	color: #3E3E3E;
+}
+.tag_frame{
+	float: left;
+	display: block;
+	width: 53px;
+	height: 22px;
+	line-height: 22px;
+	font-size: 12px;
+	background: #F7F7F7;
+	text-align: center;
+	margin-left: 10px;
+}
+.info{
+	clear: both;
+	width: 900px;
+	height: 120px;
+	margin: 0 auto;
+	color: #3E3E3E;
+	font-size: 14px;
+	background: #F7F7F7;
+}
+.info .org_info{
+	color: #000000;
+	font-size: 16px;
+}
