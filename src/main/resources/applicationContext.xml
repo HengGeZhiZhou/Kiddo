@@ -34,6 +34,10 @@
         <property name="mappingResources">
             <list>
                 <value>com/cs/kiddo/entity/User.hbm.xml</value>
+                <value>com/cs/kiddo/entity/AbArticles.hbm.xml</value>
+                <value>com/cs/kiddo/entity/Video.hbm.xml</value>
+                <value>classpath:com/cs/kiddo/entity/State.hbm.xml</value>
+                <value>classpath:com/cs/kiddo/entity/School.hbm.xml</value>
             </list>
         </property>
     </bean>

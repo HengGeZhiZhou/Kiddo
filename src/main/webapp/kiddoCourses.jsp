@@ -18,7 +18,7 @@
 
 		<!--导航开始-->
 		<nav>
-			<a href="${pageContext.request.contextPath}/index.jsp">Kido首页</a>
+			<a href="${pageContext.request.contextPath}/Kiddo/News/getNews.do">Kido首页</a>
 			<a href="${pageContext.request.contextPath}/kiddoCourses.jsp">Kido课堂</a>
 			<a href="${pageContext.request.contextPath}/kiddoOrg.jsp">Kido机构</a>
 			<a href="${pageContext.request.contextPath}/kiddoChild.jsp">Kido育儿</a>
@@ -128,8 +128,71 @@
 				</div>
 			</div>
 			<div class="right aside">
-				<img src="${pageContext.request.contextPath}/img/course/video.png"/>
+				<div class="aside_h">
+					<a href="#">
+						<h2>儿童教育动画</h2><span>更多>></span></a>
+				</div>
+				<ul>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/pickyeaters.do">
+							<img src="${pageContext.request.contextPath}/img/course/v1.png" alt="" />
+							<p>为什么说挑食不好</p>
+						</a>
+
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/sugar.do"><img src="${pageContext.request.contextPath}/img/course/v2.png" alt="" />
+							<p>为什么糖不能多吃</p>
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/NewYear.do"><img src="${pageContext.request.contextPath}/img/course/v3.png" alt="" />
+							<p>为什么新年要放</p>
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/luckymoney.do"><img src="${pageContext.request.contextPath}/img/course/v4.png" alt="" />
+							<p>为什么新年要给</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/fruits.do"><img src="${pageContext.request.contextPath}/img/course/v5.png" alt="" />
+							<p>为什么儿童不能</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/washed.do"><img src="${pageContext.request.contextPath}/img/course/v6.png" alt="" />
+							<p>为什么水果和蔬菜</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/aircraft.do"><img src="${pageContext.request.contextPath}/img/course/v7.jpg" alt="" />
+							<p>飞机为什么要迎风起落</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/sun.do"><img src="${pageContext.request.contextPath}/img/course/v8.jpg" alt="" />
+							<p>为什么晚上看不见太阳呢</p>
+
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/summer.do"><img src="${pageContext.request.contextPath}/img/course/v9.jpg" alt="" />
+							<p>为什么夏天会长痱子</p>
+						</a>
+					</li>
+					<li>
+						<a href="${pageContext.request.contextPath}/Kiddo/Video/getVideoUrl/fish.do"><img src="${pageContext.request.contextPath}/img/course/v10.jpg" alt="" />
+							<p>为什么鱼在睡觉时不闭眼睛</p>
+						</a>
+					</li>
+				</ul>
 			</div>
+		</div>
 		</div>
 		<!--主体内容开始-->
 		

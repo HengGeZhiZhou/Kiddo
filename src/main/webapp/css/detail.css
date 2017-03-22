@@ -1,0 +1,19 @@
+*{
+	padding: 0;
+}
+body{
+	background: url(../img/body_bg.jpg);
+}
+.content{
+	background: rgba(255,255,255,0.8);
+	width: 980px;
+	height: 700px;
+	margin: 0 auto;
+}
+.content h2{
+	text-align: center;
+}
+.content .msg{
+	text-align: center;
+	width: 980px;
+}

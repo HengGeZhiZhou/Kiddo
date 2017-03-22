@@ -20,7 +20,7 @@
 		
 		<!--导航开始-->
 		<nav>
-			<a href="${pageContext.request.contextPath}/index.jsp">Kido首页</a>
+			<a href="${pageContext.request.contextPath}/Kiddo/News/getNews.do">Kido首页</a>
 			<a href="${pageContext.request.contextPath}/kiddoCourses.jsp">Kido课堂</a>
 			<a href="${pageContext.request.contextPath}/kiddoOrg.jsp">Kido机构</a>
 			<a href="${pageContext.request.contextPath}/kiddoChild.jsp">Kido育儿</a>

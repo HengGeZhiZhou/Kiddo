@@ -31,7 +31,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public String registerUser(User user) {
+    public String registerUser(String account,String password) {
+        User user=new User();
+        user.setAccount(account);
+        user.setPassword(password);
         user.setId(CreateNewUserId.getNewUserId(userDao.getMaxId()));
         user.setLastTime(new java.sql.Timestamp(System.currentTimeMillis()));
         user.setAddTime(new java.sql.Timestamp(System.currentTimeMillis()));

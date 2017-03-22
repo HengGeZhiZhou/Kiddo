@@ -1,3 +1,5 @@
+<%@ page import="java.util.List" %>
+<%@ page import="com.cs.kiddo.entity.AbArticles" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" %>
 <html>
 <head>
@@ -25,14 +27,14 @@
             <input type="password" class="text" name="password" placeholder="请输入您的密码"/>
             <input type="submit" class="btn" name="login" value="登录"/>
             <%--<input type="button" class="btn" name="register" value="注册"/>--%>
+            <a href="${pageContext.request.contextPath}/kiddoRegister.jsp">注册</a>
         </form>
-            <a href="${pageContext.request.contextPath}/">注册</a>
         <%
             }
             else {
                 %>
             欢迎<%=username%>来到本网站
-            <br><a href="${pageContext.request.contextPath}/Kiddo/logout.do">退出</a>
+               <a href="${pageContext.request.contextPath}/Kiddo/logout.do">退出</a>
         <%
             }
         %>
@@ -43,7 +45,7 @@
 
 <!--导航开始-->
 <nav>
-    <a href="${pageContext.request.contextPath}/index.jsp">Kido首页</a>
+    <a href="${pageContext.request.contextPath}/Kiddo/News/getNews.do">Kido首页</a>
     <a href="${pageContext.request.contextPath}/kiddoCourses.jsp">Kido课堂</a>
     <a href="${pageContext.request.contextPath}/kiddoOrg.jsp">Kido机构</a>
     <a href="${pageContext.request.contextPath}/kiddoChild.jsp">Kido育儿</a>
@@ -98,32 +100,30 @@
                 <div class="neww">
                     <a href=""><img src="${pageContext.request.contextPath}/img/index/h2.png" alt=""/></a>
                     <ul>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
+                        <%
+                            List<AbArticles> newsCenter= (List<AbArticles>) request.getAttribute("newsCenter");
+
+                            for (AbArticles abArticles:newsCenter){
+                                %>
+                        <li><a href="${pageContext.request.contextPath}/Kiddo/News/getNewsInfo/<%=abArticles.getId()%>.do"><%=abArticles.getTitle() %></a></li>
+                        <%
+                            }
+                        %>
                     </ul>
                 </div>
                 <!--行业资讯-->
                 <div class="hangy">
                     <a href=""><img src="${pageContext.request.contextPath}/img/index/h3.png" alt=""/></a>
                     <ul>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
-                        <li>网站简介网站简介网站简介网站简介网站简介网站简介</li>
+                        <%
+                            List<AbArticles> industryInfo= (List<AbArticles>) request.getAttribute("industryInfo");
+
+                            for (AbArticles abArticles:industryInfo){
+                        %>
+                        <li><a href="${pageContext.request.contextPath}/Kiddo/News/getNewsInfo/<%=abArticles.getId()%>.do"><%=abArticles.getTitle() %></a></li>
+                        <%
+                            }
+                        %>
                     </ul>
                 </div>
             </div>

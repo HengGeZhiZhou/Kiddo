@@ -25,11 +25,18 @@
         <!--<property name="unauthorizedUrl" value="/unauthorized.jsp"/>-->
         <property name="filterChainDefinitions">
             <value>
-                /Kiddo/logout.do=logout
+                <!--注册登录-->
+                /kiddoRegister.jsp=anon
                 /Kiddo/User/login.do=anon
+                /Kiddo/User/register.do=anon
+                /Kiddo/logout.do=logout
+                <!--静态资源-->
+                /video/**=anon
                 /css/**=anon
                 /img/**=anon
                 /js/**=anon
+                <!--jsp页面,访问资源-->
+                /Kiddo/News/getNews.do=anon
                 /index.jsp=anon
                 # everything else requires authentication:
                 /** = authc

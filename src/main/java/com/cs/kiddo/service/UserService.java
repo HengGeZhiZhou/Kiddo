@@ -8,5 +8,5 @@ public interface UserService {
 
     User getUser(String account) throws DefinedException;  //根据账号查找用户
 
-    String registerUser(User user);  //注册用户
+    String registerUser(String account,String password);  //注册用户
 }

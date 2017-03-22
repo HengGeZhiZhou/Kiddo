@@ -118,16 +118,39 @@
 	height: 130px;
 	margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
 .aside{
+	width: 274px;
+	height: 846px;
+	background: #FFF3F7;
+	padding: 3px;
+}
+.aside_h{
 	width: 280px;
-	height: 850px;
+	height: 24px;
+	line-height: 24px;
+}
+.aside_h a{
+	color: #363636;
+}
+.aside_h h2{
+	float: left;
+	width: 200px;
+}
+.aside_h a span{
+	float: right;
+	margin-right: 5px;
+}
+.aside_h a span:hover{
+	color: #D58512;
+}
+.aside ul li{
+	float:left;
+	width: 107px;
+	height: 82px;
+	margin: 10px 10px 30px 15px;
+	text-align: center;
+}
+.aside ul li p{
+	margin-top: 5px;
+	color: #333333;
 }

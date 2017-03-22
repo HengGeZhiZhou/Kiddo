@@ -32,7 +32,7 @@ public class UserRealm  extends AuthorizingRealm {
             SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(pricipal,credentials,realmName);
             return info;
         }catch (DefinedException e){
-            throw new UnknownAccountException("----用户不存在----");
+            throw new UnknownAccountException("用户名不存在");
         }
     }
 }
